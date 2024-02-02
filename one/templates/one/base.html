@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAE Sports and Cultural Council</title>
+    <link rel="stylesheet" href="{% static 'css/one.css' %}">
+    <!-- Add any other meta tags, stylesheets, or scripts here -->
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Navigation bar -->
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Events</a>
+            <!-- Add other navigation links as needed -->
+        </nav>
+        <h1>DAE Sports and Cultural Council</h1>
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- Content unique to each page will go here -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p> DAE Sports and Cultural Council</p>
+        <!-- Add footer content here -->
+    </footer>
+
+    <script src="{% static 'js/one.js' %}"></script>
+    <!-- Add any additional scripts here -->
+</body>
+</html>

@@ -1,7 +1,37 @@
-<!DOCTYPE html>
-<html>
-<body>
-    <p>Hi there!</p>
-    <p>DAE SCC website works in progress</p>
-</body>
-</html>
+<!-- home.html -->
+
+{% extends "one/base.html" %}
+
+{% block content %}
+
+<header>
+    <h1>Welcome to the DAE Sports and Cultural Council (DAESCC)</h1>
+    <p>Empowering Community Through Sports and Culture</p>
+</header>
+
+<section id="about">
+    <h2>Who We Are</h2>
+    <p>Welcome to the official website of the DAE Sports and Cultural Council. At DAESCC, 
+        we are passionate about enriching lives and building a vibrant community through sports and cultural activities.
+         We believe in the power of sports and culture to unite people, inspire youth, and create a sense of community.</p>
+</section>
+
+<section id="events">
+    <h2>Upcoming Events</h2>
+   
+        <p>No upcoming events at the moment.</p>
+    
+</section>
+
+<section id="news">
+    <h2>Latest News</h2>
+   
+        <p>No news to show currently.</p>
+    
+</section>
+
+<footer>
+    <p>Contact Us | Follow us on Social Media</p>
+</footer>
+
+{% endblock %}
