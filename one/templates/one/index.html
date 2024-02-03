@@ -4,34 +4,64 @@
 
 {% block content %}
 
-<header>
-    <h1>Welcome to the DAE Sports and Cultural Council (DAESCC)</h1>
-    <p>Empowering Community Through Sports and Culture</p>
-</header>
+<div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+    <div class="row justify-content-center">
+      <div class="col-xl-7 col-lg-9 text-center">
+        <h1>DAE Sports and Cultural Council</h1>
+        <h2>Empowering Community Through Sports and Culture</h2>
+      </div>
+    </div>
+    <div class="text-center">
+      <a href="{% url 'about' %}" class="btn-get-started scrollto">About Us</a>
+    </div>
 
-<section id="about">
+
+
+    </div>
+  </div>
+<section id="who-we-are">
     <h2>Who We Are</h2>
-    <p>Welcome to the official website of the DAE Sports and Cultural Council. At DAESCC, 
-        we are passionate about enriching lives and building a vibrant community through sports and cultural activities.
-         We believe in the power of sports and culture to unite people, inspire youth, and create a sense of community.</p>
-</section>
+    <p>Welcome to the official website of the DAE Sports and Cultural Council.
+         At DAESCC, we are passionate about enriching lives and building a vibrant community 
+         through sports and cultural activities. We believe in the power of 
+        sports and culture to unite people, inspire youth, and create a sense of community.</p>
+        
+    <h2>What We Do</h2>
+    <div>
+        <h3>Sports Programs</h3>
+        <p>Dive into our diverse range of sports programs! 
+            Whether you're a beginner or an experienced athlete, we have something for everyone. 
+            From local tournaments to training camps, we offer opportunities to participate, learn, and excel.</p>
+    </div>
+    <div>
+        <h3>Cultural Events</h3>
+        <p>Explore the richness of culture with DAESCC. Our 
+            calendar is packed with cultural events, including art exhibitions, music concerts,
+             dance performances, and traditional festivals, celebrating our community's diverse heritage and talent.</p>
+    </div>
+    <div>
+        <h3>Community Engagement</h3>
+        <p>We're more than just sports and events. DAESCC is committed to fostering community spirit.
+             Join our volunteer programs, community outreach initiatives, and educational workshops.</p>
+    </div>
 
-<section id="events">
-    <h2>Upcoming Events</h2>
-   
-        <p>No upcoming events at the moment.</p>
-    
-</section>
+    <h2>Upcoming Highlights</h2>
+    <p>Annual Sports Gala: [Date] – Join us for our flagship sports event...</p>
+    <p>Cultural Fiesta: [Date] – Experience the vibrancy of our cultural extravaganza...</p>
+    <a href="{% url 'event_calendar' %}">View Full Calendar</a>
 
-<section id="news">
-    <h2>Latest News</h2>
-   
-        <p>No news to show currently.</p>
-    
-</section>
+    <h2>Join Our Community</h2>
+    <p>Become a part of DAESCC! Whether you're looking to participate in activities, volunteer...</p>
+    <a href="#">Sign Up</a> | <a href="#">Subscribe to Newsletter</a>
 
-<footer>
-    <p>Contact Us | Follow us on Social Media</p>
-</footer>
+    <h2>Latest News & Announcements</h2>
+    <p>DAESCC Awarded ‘Best Community Initiative’ – We're honored to receive this recognition...</p>
+    <p>New Sports Facility Opening Soon – Get ready to experience our state-of-the-art sports complex...</p>
+    <a href="{% url 'news' %}">Read More News</a>
+
+    <h2>Our Gallery</h2>
+    <p>Take a glimpse into our vibrant community events through our photo and video gallery.</p>
+    <a href="{% url 'gallery' %}">View Gallery</a>
+</section>
 
 {% endblock %}
